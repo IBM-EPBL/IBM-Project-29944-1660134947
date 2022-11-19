@@ -1,0 +1,194 @@
+<!Doctype html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>wing energy
+	</title>
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body,header
+	{
+		height:80%;
+		
+	}
+		body{
+			position: absolute;
+			width: 100%;
+			height: 100vh;
+			background-image: url("mountain.jpg");
+			background-size:cover;
+			overflow: hidden;
+			background-attachment: fixed;
+		
+		}
+		.stand{
+			position: absolute;
+			width: 4%;
+			height: 45%;
+			background: linear-gradient(99deg,#ffffff,#6c6666);
+			box-shadow: inset -10px -10px 5px gray,
+                       inset 10px 10px 5px gray;
+            left:631px;
+            bottom: 0%;
+            border-bottom: 3px solid rgba(0, 250, 0, 0.2);
+		}
+		.fan{
+			position: relative;
+			width: 80px;
+			height: 80px;
+			background: radial-gradient(#20BDFF,#5433FF);
+			border-radius: 50%;
+			border: 1px solid black;
+			margin-left: 620px;
+			margin-top: 20%;
+			animation: rotate 15s linear infinite;
+		}
+		.fan span{
+			width: 50%;
+			height: 200px;
+			background: linear-gradient(90deg,#ffffff,#6c6666);
+			box-shadow: inset -10px -10px 5px gray,
+                       inset 10px 10px 5px gray;
+			border-radius: 50% 50% 0px 0px;
+		}
+		@keyframes rotate{
+			from{
+
+			}
+			to{
+				transform: rotateZ(360deg);
+			}
+		}
+
+		.fan span:nth-child(1){
+			position: absolute;
+			left: 100px;
+			top: -20px;
+			transform: rotateZ(120deg);
+		}
+		.fan span:nth-child(2){
+			position: absolute;
+			left: -70px;
+			top: -15px;
+			transform: rotateZ(240deg);
+		}
+		.fan span:nth-child(3){
+			position: absolute;
+			left: 20px;
+			top: -170px;
+			transform: rotateZ(360deg);
+		}
+		.circle{
+			width: 55px;
+			height: 55px;
+			background: radial-gradient(gray,white);
+			position: absolute;
+			left: 635px;
+			top: 325px;
+			border-radius: 50%;
+		}
+		.stand1{
+			position: absolute;
+			width: 4%;
+			height: 30%;
+			background: linear-gradient(99deg,#ffffff,#6c6666);
+			box-shadow: inset -10px -10px 5px gray,
+                       inset 10px 10px 5px gray;
+            left:100px;
+            bottom: 0%;
+            border-bottom: 3px solid rgba(0, 250, 0, 0.2);
+		}
+		.fan1{
+			position: absolute;
+			width: 80px;
+			height: 80px;
+			background: radial-gradient(#20BDFF,#5433FF);
+			border-radius: 50%;
+			border: 1px solid black;
+			margin-left: 85px;
+			margin-bottom: 45%;
+			animation: rotate 15s linear infinite;
+		}
+		.fan1 span{
+			width: 50%;
+			height: 210px;
+			background: linear-gradient(90deg,#ffffff,#6c6666);
+                        box-shadow: inset -10px -10px 5px gray,
+                       inset 10px 10px 5px gray;
+			border-radius: 50% 50% 0px 0px;
+
+		}
+		@keyframes rotate{
+			from{
+
+			}
+			to{
+				transform: rotateZ(360deg);
+			}
+		}
+		.fan1 span:nth-child(1){
+			position: absolute;
+			left: 90px;
+			top: -20px;
+			transform: rotateZ(120deg);
+		}
+		.fan1 span:nth-child(2){
+			position: absolute;
+			left: -55px;
+			top: -25px;
+			transform: rotateZ(240deg);
+		}
+		.fan1 span:nth-child(3){
+			position: absolute;
+			left: 20px;
+			top: -160px;
+			transform: rotateZ(360deg);
+			
+		}
+		.circle1{
+			width: 50px;
+			height: 50px;
+			background: radial-gradient(gray,white);
+			position: absolute;
+			left: 100px;
+			top: 410px;
+			border-radius:50%;}
+		.bottom{
+			text-align: right;
+			margin: 50px 50px;
+		}
+
+	</style>
+	</head>
+	<body>
+		<p style="color:white;"><font size="6" color= "white"face="Times new roman"><center><b>Predicting Energy Output Of Wind Turbine Based On Weather Conditions</center></b>
+		</b></p>
+		<div class="container">
+			<div class="stand"></div>
+			<div class="fan">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="circle"></div>
+		</div>
+		<div class="count">
+			<div class="stand1"></div>
+			<div class="fan1">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="circle1"></div>
+		</div>
+		<div class="bottom">
+			<a href="index.html">
+			<button><font size="25"><b>Calculate</font></b></button></a>
+			</body>
+	</html>
